@@ -1,0 +1,53 @@
+<?php
+/**
+ * The base configuration for WordPress
+ */
+
+// * Database settings - You can get this info from your web host * //
+/** The name of the database for WordPress */
+define( 'DB_NAME', 'project_db' );
+
+/** Database username */
+define( 'DB_USER', 'project_user' );
+
+/** Database password */
+define( 'DB_PASSWORD', 'Strongpassword' );
+
+/** Database hostname */
+define( 'DB_HOST', '192.168.92.130' );
+
+/** Database charset to use in creating database tables. */
+define( 'DB_CHARSET', 'utf8mb4' );
+
+/** The database collate type. Don't change this if in doubt. */
+define( 'DB_COLLATE', '' );
+
+/**#@+
+ * Authentication unique keys and salts.
+ */
+define( 'AUTH_KEY',         '$=p#DZgsA0<-x~B,0iYdAuHE773b<5 f-a70^}>ifjV?$B38[;>' );
+define( 'SECURE_AUTH_KEY',  'ZDCCC6is0wpa<3P(Ss%l,]dB/NU7-b(F7()eOaH[W.H)2 30B>>' );
+define( 'LOGGED_IN_KEY',    '@yo9`0hZw%K3xA{WJ9ixVK4a]G@#7DgYYIpA@U6(#9!~J@rV>' );
+define( 'NONCE_KEY',        'M*~!EKjMJAN3^o &+6PrfLqN:SQ<<eXs6>kZAs#NDd_w@2]EG[' );
+define( 'AUTH_SALT',        'UO!9cG4v/%YIA2-/r@)LJ0w61xRP8N9/.2Z[Lg^Eb4l~J{<X' );
+define( 'SECURE_AUTH_SALT', '^XPbT$fakKZxl%70h5c QXYM10)~PE:KQZGyV^B%tV,(t1$pMw' );
+define( 'LOGGED_IN_SALT',   '&Zd(rV_1FKEK:`2cy 2-^oJ:[A@uZy 8 Hr#B(6GDHQe&#1zyE' );
+define( 'NONCE_SALT',       'LvRnl[AD]n-.kMAkMp-VQSUOAy[]0 (J=,48U*A6*+@1XK$xRj' );
+
+/**
+ * WordPress database table prefix.
+ */
+$table_prefix = 'wp_';
+
+/**
+ * For developers: WordPress debugging mode.
+ */
+define( 'WP_DEBUG', false );
+
+/** Absolute path to the WordPress directory. */
+if ( ! defined( 'ABSPATH' ) ) {
+	define( 'ABSPATH', _DIR_ . '/' );
+}
+
+/** Sets up WordPress vars and included files. */
+require_once ABSPATH . 'wp-settings.php';
