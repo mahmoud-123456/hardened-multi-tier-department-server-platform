@@ -13,6 +13,10 @@
 - [ ] Install Apache2 Web Server
 - [ ] Deploy WordPress Files
 - [ ] Database Connection Setup
-![Project Architecture Diagram]
+## ![Project Architecture Diagram]
 (https://quickchart.io/graphviz?
 graph=digraph{rankdir=LR;node[shape=box,style=filled,fontname="Arial",color="#e1f5fe",width=2];edge[fontname="Arial",fontsize=10];WS[label="Web%20Tier%20(App%20Server)\nUbuntu%20Server\nIP:%20192.168.80.128",fillcolor="#bbdefb"];DB[label="Database%20Tier\nMySQL%20Server\nIP:%20192.168.1.6",fillcolor="#c8e6c9"];WS->DB[label="Private%20Connection\n(Port%203306)",color="#1e88e5",penwidth=2];})
+### Future Enhancements 
+* *SSL/TLS Encryption:* Plan to secure communication between the Web and Database tiers.
+* *Database Access Hardening:* Restricting MySQL access to only the Web Server's IP for maximum security.
+* *Monitoring:* Implementing tools to track server health and connection stability.
